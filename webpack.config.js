@@ -1,11 +1,13 @@
 const webpack = require("webpack");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
+// const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
+// const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
 
 const config = {
   entry: {
-    app: "./assets/js/index.js",
+    app: "./public/js/index.js",
   },
   output: {
     filename: "[name].bundle.js",
